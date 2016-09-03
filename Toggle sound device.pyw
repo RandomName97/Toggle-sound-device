@@ -8,7 +8,7 @@ def currentDevice():
     return file.read()                                                              # Return the text in the config file
 
 def getNewDevice():
-  if currentDevice() == 'Speakers':                                                 # See if current device is speakers
+  if currentDevice() == 'Speakers':                                                 # Check if current device is speakers
     return 'Headphones'                                                             # Return headphones
   elif currentDevice() == 'Headphones':                                             # Current device is headphones
     return 'Speakers'                                                               # Return speakers
